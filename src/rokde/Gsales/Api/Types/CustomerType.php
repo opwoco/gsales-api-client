@@ -26,7 +26,7 @@ class CustomerType extends Type implements IdentifierInterface
 	private $created;
 
 	/**
-	 * @var strings
+	 * @var string
 	 */
 	private $company;
 
