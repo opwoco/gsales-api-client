@@ -72,7 +72,7 @@ abstract class Type implements \JsonSerializable
         $data = array();
         /** @var \ReflectionMethod $method */
         foreach (array_values($ref->getMethods()) as $method) {
-            if ((0 === strpos($method->name, "get") || 0 === strpos($method->name, "is")) && $method->isPublic()) {
+            if ((0 === strpos($method->name, "get") || 0 === strpos($method->name, "is"))) {
 
                 if (0 === strpos($method->name, "get")) {
                     $name = substr($method->name, 3);

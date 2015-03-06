@@ -55,9 +55,9 @@ class Base extends Type
 	protected $custom3;
 
 	/**
-	 * @var bool
+	 * @var integer
 	 */
-	protected $useDefaultTax = true;
+	protected $useDefaultTax = 1;
 
 	/**
 	 * sets custom1
@@ -269,20 +269,20 @@ class Base extends Type
 	/**
 	 * sets useDefaultTax
 	 *
-	 * @param boolean $useDefaultTax
+	 * @param integer $useDefaultTax
 	 *
 	 * @return $this
 	 */
 	public function setUseDefaultTax($useDefaultTax)
 	{
-		$this->useDefaultTax = $useDefaultTax;
+		$this->useDefaultTax = $this->getUseDefaultTax();
 		return $this;
 	}
 
 	/**
 	 * returns UseDefaultTax
 	 *
-	 * @return boolean
+	 * @return integer
 	 */
 	public function getUseDefaultTax()
 	{

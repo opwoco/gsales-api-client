@@ -31,9 +31,14 @@ class Client extends Api
 		} else {
 			$options['classmap'] = array_merge(static::classmap(), $options['classmap']);
 		}
+//
+//        $options = array_merge($options, array('proxy_host'     => "127.0.0.1",
+//            'proxy_port'     => 8080));
+
 
 		parent::__construct(new SoapClient($wsdl, $options), $apikey);
 	}
+
 
 	/**
 	 * returns a customer context

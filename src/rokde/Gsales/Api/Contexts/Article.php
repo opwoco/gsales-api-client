@@ -22,7 +22,7 @@ class Article extends Api
 	 */
 	public function get($articleId)
 	{
-		return $this->getEntity('getArticle', 'aticleid', $articleId);
+		return $this->getEntity('getArticle', 'articleid', $articleId);
 	}
 
 	/**

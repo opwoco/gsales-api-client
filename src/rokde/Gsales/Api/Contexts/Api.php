@@ -2,6 +2,7 @@
 
 use Rokde\Gsales\Api\Contracts\IdentifierInterface;
 use Rokde\Gsales\Api\Exceptions\SoapApiException;
+use Rokde\Gsales\Api\Types\ArticleType;
 use Rokde\Gsales\Api\Types\Filter;
 use Rokde\Gsales\Api\Types\Sort;
 use Rokde\Gsales\Api\Types\Status;
@@ -194,8 +195,7 @@ class Api
 	protected function call($method, array $arguments = array())
 	{
 		$arguments = array_merge(['apikey' => $this->getApiKey()], $arguments);
-
-		$response = $this->client->__call($method, $arguments);
+        $response = $this->client->__call($method, $arguments);
 
 		if (isset($response['status'])) {
 			/** @var Status $status */
