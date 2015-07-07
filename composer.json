@@ -16,7 +16,12 @@
     },
 	"require-dev": {
 		"symfony/console": "v2.3.12"
-	},
+	},    
+	"autoload": {
+      "psr-4": {
+        "Rokde\\": "src/rokde"
+      }
+    },
 	"suggest": {
 		"illuminate/support": "Allows using within laravel framework.",
 		"illuminate/config": "Necessary for the use within laravel framework."
