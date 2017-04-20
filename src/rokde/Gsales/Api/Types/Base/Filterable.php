@@ -616,6 +616,7 @@ class Filterable extends Type implements IdentifierInterface
 		return $this;
 	}
 
+
 	/**
 	 * returns Status
 	 *

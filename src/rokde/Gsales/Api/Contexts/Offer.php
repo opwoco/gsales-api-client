@@ -106,6 +106,7 @@ class Offer extends Api
 	{
 		return $this->modifyState('setOfferStateBilled', 'offerid', $offer);
 	}
+    
 
 	/**
 	 * creates a position within an offer

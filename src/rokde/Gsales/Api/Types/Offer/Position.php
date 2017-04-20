@@ -124,6 +124,17 @@ class Position extends BasePosition implements IdentifierInterface
 		return $this->id;
 	}
 
+    /**
+     * Set id
+     *
+     * @param $id
+     * @return $this
+     */
+    public function setId($id) {
+        $this->id = $id;
+        return $this;
+    }
+
 	/**
 	 * returns Invoice Id
 	 *
@@ -173,6 +184,17 @@ class Position extends BasePosition implements IdentifierInterface
 	{
 		return $this->sortno;
 	}
+
+    /**
+     * Set sortNumber
+     *
+     * @param $sortNumber
+     * @return $this
+     */
+    public function setSortNumber($sortNumber) {
+        $this->sortno = $sortNumber;
+        return $this;
+    }
 
 	/**
 	 * returns TaxValue

@@ -1046,4 +1046,26 @@ class CustomerType extends Type implements IdentifierInterface
 		$customerNo = $this->getCustomerNumber();
 		return ( ! empty($customerNo)) ? $customerNo : $this->getEmail();
 	}
+
+    /**
+     * Get typ
+     *
+     * @return int
+     */
+    public function getTyp()
+    {
+        return $this->typ;
+    }
+
+    /**
+     * Set type
+     *
+     * @param int $typ
+     * @return $this
+     */
+    public function setTyp($typ)
+    {
+        $this->typ = $typ;
+        return $this;
+    }
 }
